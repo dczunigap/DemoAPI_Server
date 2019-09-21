@@ -1,2 +1,17 @@
 # DemoAPI_Server
 Demostration API Server with NodeJS
+
+Para correr la aplicacion se puede usar:
+    
+    npm run start
+    ó
+    npm run dev <--- nodemon
+
+# FAQs
+Si no la ejecucion del comando _mongod_ muestra errores y se cierra, se debe ejecutar el siguiente comando:
+
+    mongod --dbpath "C:\mongodb\data\db"
+    
+o el directorio que mas nos convenga
+
+
