@@ -12,8 +12,7 @@ Para correr la aplicacion se puede usar:
 # FAQs
 Si no la ejecucion del comando _mongod_ muestra errores y se cierra, se debe ejecutar el siguiente comando:
 
-    mongod --dbpath "C:\mongodb\data\db"
-    
-o el directorio que mas nos convenga
-
+- Crear la carpeta ```C:\data\db```
+- Ejecutar el comando  _```mongod```_
+ 
 

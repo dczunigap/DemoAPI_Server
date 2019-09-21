@@ -7,14 +7,17 @@ var express = require('express'),
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/demoapi');
+mongoose.connect('mongodb://localhost:27017/demoapi', { useNewUrlParser: true, useUnifiedTopology: true});
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+/*app.use(function(req, res) {
+    res.status(404).send({url: req.originalUrl + ' not found'})
+});*/
 
 var routes = require('./api/routes/listRoute'); //importing route
 routes(app); //register the route
 
 app.listen(port);
 
-console.log('todo list RESTful API server started on: ' + port);
+console.log('RESTful API server started.... on: ' + port);
