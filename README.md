@@ -4,7 +4,9 @@ Demostration API Server with NodeJS
 Para correr la aplicacion se puede usar:
     
     npm run start
-    ó
+    
+ó
+    
     npm run dev <--- nodemon
 
 # FAQs
